@@ -5,13 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DASSI — Mix & Mastering</title>
   <meta name="description" content="Nie miksuję dźwięku. Projektuję emocje. Mix, mastering i pełne brzmienie tworzone z precyzją i duszą — by DASSI.">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Fonts: Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2b5d6c28f.js" crossorigin="anonymous"></script>
+
+  <!-- FontAwesome (opcjonalnie, jeśli potrzebujesz ikon) -->
+  <<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pJj9m+jliFthkUGRgJ4e4RmN8q5B3y73Q6/m3xqZpx8d2pIoS3Xbl6jr9bHlfK0U65c1sJc0OQzQYlJlw1KnQg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
-<body>
+
 
   <!-- Hero Section -->
   <section class="hero">
@@ -31,91 +38,88 @@
     </div>
   </section>
 
-<!-- Portfolio Section -->
-<section id="portfolio">
-  <h2>Portfolio</h2>
-  <div class="portfolio-grid">
-    <!-- Sam1 -->
-    <div class="track">
-      <img src="assets/images/placeholder.jpg" alt="Sam 1">
-      <h4>Sam 1</h4>
-      <audio controls>
-        <source src="assets/audio/sam1.mp3" type="audio/mpeg">
-      </audio>
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      
+      <div class="track">
+  <img src="assets/images/placeholder1.jpg" alt="Track 1">
+  <h4>Track 1</h4>
+  <audio controls>
+    <source src="assets/audio/track1.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+<div class="track">
+  <img src="assets/images/placeholder2.jpg" alt="Track 2">
+  <h4>Track 2</h4>
+  <audio controls>
+    <source src="assets/audio/track2.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+<div class="track">
+  <img src="assets/images/placeholder3.jpg" alt="Track 3">
+  <h4>Track 3</h4>
+  <audio controls>
+    <source src="assets/audio/track3.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+
     </div>
-
-    <!-- Sam2 -->
-    <div class="track">
-      <img src="assets/images/placeholder.jpg" alt="Sam 2">
-      <h4>Sam 2</h4>
-      <audio controls>
-        <source src="assets/audio/sam2.mp3" type="audio/mpeg">
-      </audio>
-    </div>
-
-    <!-- Sam3 -->
-    <div class="track">
-      <img src="assets/images/placeholder.jpg" alt="Sam 3">
-      <h4>Sam 3</h4>
-      <audio controls>
-        <source src="assets/audio/sam3.mp3" type="audio/mpeg">
-      </audio>
-    </div>
-  </div>
-</section>
-
-
+  </section>
 
   <!-- Pricing Section -->
-<section id="pricing">
-  <h2>Cennik</h2>
-  <div class="pricing-cards">
-    <div class="pricing-card" data-expanded="false">
-      <span class="title">Mix</span>
-      <strong>40–70 zł</strong>
-      <div class="details">
-        <ul>
-          <li>Pełne zbalansowanie wszystkich elementów utworu</li>
-          <li>Korekcja barwy, dynamiki i przestrzeni</li>
-          <li>Wyrównanie głośności wokali i instrumentów</li>
-          <li>Przygotowanie miksu pod mastering</li>
-          <li>Nieograniczone poprawki</li>
-        </ul>
+  <section id="pricing">
+    <h2>Cennik</h2>
+    <div class="pricing-cards">
+      <div class="pricing-card">
+        <span class="title">Mix</span>
+        <strong>40–70 zł</strong>
+        <div class="details">
+          <ul>
+            <li>Pełne zbalansowanie wszystkich elementów utworu</li>
+            <li>Korekcja barwy, dynamiki i przestrzeni</li>
+            <li>Wyrównanie głośności wokali i instrumentów</li>
+            <li>Przygotowanie miksu pod mastering</li>
+            <li>Nieograniczone poprawki</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pricing-card featured">
+        <span class="title">Mix + Mastering</span>
+        <strong>60–100 zł</strong>
+        <div class="details">
+          <ul>
+            <li>Pełna opieka nad brzmieniem — od surowego projektu do finalnego masteru</li>
+            <li>Precyzyjna kontrola tonalna, przestrzenna i dynamiczna</li>
+            <li>Zgranie miksu i masteringu w jedną spójną całość</li>
+            <li>Finalny eksport w dowolnym formacie (WAV, MP3, FLAC, itp.)</li>
+            <li>Nieograniczone poprawki</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pricing-card">
+        <span class="title">Mastering</span>
+        <strong>30–60 zł</strong>
+        <div class="details">
+          <ul>
+            <li>Finalne dopracowanie miksu do profesjonalnego poziomu</li>
+            <li>Balans tonalny i kontrola dynamiki</li>
+            <li>Nadanie odpowiedniego charakteru i energii</li>
+            <li>Finalny eksport w dowolnym formacie (WAV, MP3, FLAC, itp.)</li>
+            <li>Nieograniczone poprawki</li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <div class="pricing-card featured" data-expanded="false">
-      <span class="title">Mix + Mastering</span>
-      <strong>60–100 zł</strong>
-      <div class="details">
-        <ul>
-          <li>Pełna opieka nad brzmieniem — od surowego projektu do finalnego masteru</li>
-          <li>Precyzyjna kontrola tonalna, przestrzenna i dynamiczna</li>
-          <li>Zgranie miksu i masteringu w jedną spójną całość</li>
-          <li>Finalny eksport w dowolnym formacie (WAV, MP3, FLAC, itp.)</li>
-          <li>Nieograniczone poprawki</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="pricing-card" data-expanded="false">
-      <span class="title">Mastering</span>
-      <strong>30–60 zł</strong>
-      <div class="details">
-        <ul>
-          <li>Finalne dopracowanie miksu do profesjonalnego poziomu</li>
-          <li>Balans tonalny i kontrola dynamiki</li>
-          <li>Nadanie odpowiedniego charakteru i energii</li>
-          <li>Finalny eksport w dowolnym formacie (WAV, MP3, FLAC, itp.)</li>
-          <li>Nieograniczone poprawki</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <p class="pricing-note">💬 Konsultacje i wycena — za darmo</p>
-</section>
-
+    <p class="pricing-note">💬 Konsultacje i wycena — za darmo</p>
+  </section>
 
   <!-- Contact Section -->
   <section id="contact">
@@ -131,8 +135,7 @@
     © <span id="year"></span> DASSI — Mix & Mastering
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <!-- JS -->
+  <script src="assets/js/script.js"></>
 </body>
 </html>

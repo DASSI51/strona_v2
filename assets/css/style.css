@@ -1,4 +1,4 @@
-/* ======= RESET ======= */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +17,15 @@ body {
   overflow-x: hidden;
 }
 
-/* ======= HERO ======= */
+h1, h2, h3 {
+  font-weight: 800; /* heavy */
+}
+
+strong {
+  font-weight: 600; /* semi-bold */
+}
+
+/* HERO */
 .hero {
   height: 100vh;
   display: flex;
@@ -50,7 +58,7 @@ body {
   margin: 0 auto;
 }
 
-/* ======= SECTIONS ======= */
+/* SECTIONS */
 section {
   padding: 100px 8%;
   text-align: center;
@@ -71,7 +79,7 @@ section h2 {
   color: #fdfdfd;
 }
 
-/* ======= ABOUT ======= */
+/* ABOUT */
 #about p {
   max-width: 700px;
   margin: 0 auto;
@@ -79,7 +87,7 @@ section h2 {
   font-size: 1.05rem;
 }
 
-/* ======= PORTFOLIO ======= */
+/* PORTFOLIO */
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -114,7 +122,7 @@ section h2 {
   outline: none;
 }
 
-/* ======= PRICING ======= */
+/* PRICING */
 .pricing-cards {
   display: flex;
   flex-wrap: wrap;
@@ -199,7 +207,7 @@ section h2 {
   text-align: center;
 }
 
-/* ======= CONTACT ======= */
+/* CONTACT */
 .contact-icons {
   display: flex;
   justify-content: center;
@@ -218,7 +226,7 @@ section h2 {
   transform: scale(1.1);
 }
 
-/* ======= FOOTER ======= */
+/* FOOTER */
 footer {
   text-align: center;
   padding: 40px 0;
@@ -227,7 +235,7 @@ footer {
   border-top: 1px solid #1c1c1c;
 }
 
-/* ======= RESPONSIVE ======= */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2.2rem;

@@ -1,4 +1,4 @@
-// ======= FADE-IN ANIMATION FOR SECTIONS =======
+// Fade-in animation for sections
 const sections = document.querySelectorAll("section, .hero");
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -10,7 +10,7 @@ const observer = new IntersectionObserver(entries => {
 
 sections.forEach(section => observer.observe(section));
 
-// ======= PRICING CARD EXPAND =======
+// Pricing Card Expand
 document.querySelectorAll(".pricing-card").forEach(card => {
   card.addEventListener("click", () => {
     const isExpanded = card.classList.contains("expanded");
@@ -21,12 +21,11 @@ document.querySelectorAll(".pricing-card").forEach(card => {
   });
 });
 
-// ======= PAUSE OTHER AUDIOS =======
+// Pause other audios
 document.addEventListener("play", e => {
   const audios = document.querySelectorAll("audio");
   audios.forEach(a => { if (a !== e.target) a.pause(); });
 }, true);
 
-// ======= SAFE YEAR UPDATE (only if footer added later) =======
-const yearEl = document.getElementById("year");
-if (yearEl) yearEl.textContent = new Date().getFullYear();
+// Year auto-update
+document.getElementById("year").textContent = new Date().getFullYear();
