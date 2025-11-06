@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DASSI — Mix & Mastering</title>
+  <meta name="description" content="Nie miksuję dźwięku. Projektuję emocje. Mix, mastering i pełne brzmienie tworzone z precyzją i duszą — by DASSI.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2b5d6c28f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Nie miksuję dźwięku.<br>Projektuję emocje.</h1>
+      <p class="subline">Mix, mastering i pełne brzmienie tworzone z precyzją i duszą — by <strong>DASSI</strong>.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-content">
+      <h2>O mnie</h2>
+      <p>Jestem inżynierem miksu i producentem. Nie traktuję dźwięku technicznie — to dla mnie język emocji. 
+         Każdy utwór, nad którym pracuję, to projekt, który ma poruszać i zostawać w głowie. 
+         Szukam brzmienia, które nie tylko brzmi dobrze — ale *czuje się* dobrze.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="track">
+        <img src="assets/images/track1.jpg" alt="Track 1">
+        <h4>Track 1</h4>
+        <audio controls><source src="assets/audio/track1.mp3" type="audio/mpeg"></audio>
+      </div>
+      <div class="track">
+        <img src="assets/images/track2.jpg" alt="Track 2">
+        <h4>Track 2</h4>
+        <audio controls><source src="assets/audio/track2.mp3" type="audio/mpeg"></audio>
+      </div>
+      <div class="track">
+        <img src="assets/images/track3.jpg" alt="Track 3">
+        <h4>Track 3</h4>
+        <audio controls><source src="assets/audio/track3.mp3" type="audio/mpeg"></audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+<section id="pricing">
+  <h2>Cennik</h2>
+  <div class="pricing-cards">
+    <div class="pricing-card" data-expanded="false">
+      <span class="title">Mix</span>
+      <strong>40–70 zł</strong>
+      <div class="details">
+        <ul>
+          <li>Pełne zbalansowanie wszystkich elementów utworu</li>
+          <li>Korekcja barwy, dynamiki i przestrzeni</li>
+          <li>Wyrównanie głośności wokali i instrumentów</li>
+          <li>Przygotowanie miksu pod mastering</li>
+          <li>Nieograniczone poprawki</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pricing-card featured" data-expanded="false">
+      <span class="title">Mix + Mastering</span>
+      <strong>60–100 zł</strong>
+      <div class="details">
+        <ul>
+          <li>Pełna opieka nad brzmieniem — od surowego projektu do finalnego masteru</li>
+          <li>Precyzyjna kontrola tonalna, przestrzenna i dynamiczna</li>
+          <li>Zgranie miksu i masteringu w jedną spójną całość</li>
+          <li>Finalny eksport w dowolnym formacie (WAV, MP3, FLAC, itp.)</li>
+          <li>Nieograniczone poprawki</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pricing-card" data-expanded="false">
+      <span class="title">Mastering</span>
+      <strong>30–60 zł</strong>
+      <div class="details">
+        <ul>
+          <li>Finalne dopracowanie miksu do profesjonalnego poziomu</li>
+          <li>Balans tonalny i kontrola dynamiki</li>
+          <li>Nadanie odpowiedniego charakteru i energii</li>
+          <li>Finalny eksport w dowolnym formacie (WAV, MP3, FLAC, itp.)</li>
+          <li>Nieograniczone poprawki</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <p class="pricing-note">💬 Konsultacje i wycena — za darmo</p>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <div class="contact-icons">
+      <a href="mailto:1dassidassidassi@gmail.com" target="_blank" title="E-mail"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/1dassi_/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@1_DASSI" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> DASSI — Mix & Mastering
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
